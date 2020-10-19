@@ -17,14 +17,15 @@
     <!-- NAVIGATION HIDDEN BAR -->
     <nav class="nav-bar">
         <ul>
-            <li><a href="#">about.</a></li>
-            <li><a href="#">portfolio.</a></li>
-            <li><a href="#">contact.</a></li>
+            <li><a id="home" href="#homeSection">home.</a></li>
+            <li><a id="about" href="#about-section">about.</a></li>
+            <li><a id="portfolio" href="#portfolioSection">portfolio.</a></li>
+            <li><a id="contact" href="#">contact.</a></li>
         </ul>
     </nav>
     <!-- END NAVIGATION HIDDEN BAR -->
     <!-- LANDING PAGE ---------------------->
-    <div class="landing-container">
+    <div id="homeSection" class="landing-container">
         <img class="landing-bg-img" src="images/bg.svg" alt="bg">
         <img class="path1" src="images/Path 5.svg" alt="">
         <img class="path2" src="images/Path 6.svg" alt="">
@@ -51,7 +52,7 @@
     </div>
     <!-- END ABOUT SECTION --------------------->
     <!-- ABOUT DESCRIPTION SECTION --------------------->
-    <section class="description-section">
+    <section id="about-section" class="description-section">
         <div class="about-description">
             <h2 class="about-header">about</h2>
             <p class="about-paragraph">Welcome. I am a web designer and developer. I focus on Photoshop and AdobeXD as my tools for designing websites. Along with HTML5, CSS3 & JavaScript, I transform that design into a real life, user-friendly and responsive website that can help expand your own unique project. </p>
@@ -64,12 +65,35 @@
             <img src="images/Icon simple-adobephotoshop.svg" alt="JS">
         </div>
         <div class="about-link-wrapper">
-                <a href="#">portfolio</a>
+                <a href="#">download cv</a>
         </div>
+    </section>
+    <!-- END ABOUT DESCRIPTION SECTION --------------------->
+    <!--  PORTFOLIO SECTION --------------------->
+    <section id="portfolioSection" class="portfolio-section">
+        <div class="portfolio-heading-section">
+            <h2 class="portfolio-header">portfolio</h2>
+        </div>
+        <div class="portfolio-img-wrapper">
+            <a href="https://eduardo-fuentes-jr.github.io/Practice/">
+                <img src="images/Screen Shot 2020-10-19 at 2.51.15 PM.png" alt="">
+            </a>
+        </div>
+
+        <div class="portfolio-img-wrapper">
+            <a href="https://eduardo-fuentes-jr.github.io/engaged/">
+                <img src="images/Screen Shot 2020-10-19 at 2.42.01 PM.png" alt="">
+            </a>
+            </div>
+        <div class="portfolio-img-wrapper">
+            <a href="https://eduardo-fuentes-jr.github.io/Front-End-Developer/">
+                <img src="images/Screen Shot 2020-10-19 at 2.46.50 PM.png" alt="">
+            </a>
+            </div>
     </section>
 
 
-    <!-- END ABOUT DESCRIPTION SECTION --------------------->
+    <!-- END PORTFOLIO DESCRIPTION SECTION --------------------->
 
 
     <script src="script.js"></script>
