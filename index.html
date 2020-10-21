@@ -20,7 +20,7 @@
             <li><a id="home" href="#homeSection">home.</a></li>
             <li><a id="about" href="#about-section">about.</a></li>
             <li><a id="portfolio" href="#portfolioSection">portfolio.</a></li>
-            <li><a id="contact" href="#">contact.</a></li>
+            <li><a id="contact" href="#contactSection">contact.</a></li>
         </ul>
     </nav>
     <!-- END NAVIGATION HIDDEN BAR -->
@@ -40,13 +40,13 @@
         <div class="designer-container">
             <h1 class="designer-heading">Web Designer</h1>
             <div class="designer-img-container">
-                <img class="designer-img" src="images/webdesignimg.svg" alt="">
+                <img class="designer-img" src="images/webdesignimg.svg" alt="img">
             </div>
         </div>
         <div class="developer-container">
             <h1 class="developer-heading">Web Developer</h1>
             <div class="developer-img-container">
-                <img class="developer-img" src="images/webdevimg.svg" alt="">
+                <img class="developer-img" src="images/webdevimg.svg" alt="img">
             </div>
         </div>
     </div>
@@ -58,11 +58,11 @@
             <p class="about-paragraph">Welcome. I am a web designer and developer. I focus on Photoshop and AdobeXD as my tools for designing websites. Along with HTML5, CSS3 & JavaScript, I transform that design into a real life, user-friendly and responsive website that can help expand your own unique project. </p>
         </div>
         <div class="icons-description">
-            <img src="images/Icon simple-javascript.svg" alt="JS">
-            <img src="images/Icon awesome-css3-alt.svg" alt="JS">
-            <img src="images/Icon awesome-html5.svg" alt="JS">
-            <img src="images/Icon simple-adobexd.svg" alt="JS">
-            <img src="images/Icon simple-adobephotoshop.svg" alt="JS">
+            <img id="logoImg" src="images/Icon simple-javascript.svg" alt="JS">
+            <img id="logoImg" src="images/Icon awesome-css3-alt.svg" alt="JS">
+            <img id="logoImg" src="images/Icon awesome-html5.svg" alt="JS">
+            <img id="logoImg" src="images/Icon simple-adobexd.svg" alt="JS">
+            <img id="logoImg" src="images/Icon simple-adobephotoshop.svg" alt="JS">
         </div>
         <div class="about-link-wrapper">
                 <a href="eduardosresume.pdf" download>download cv</a>
@@ -74,27 +74,63 @@
         <div class="portfolio-heading-section">
             <h2 class="portfolio-header">portfolio</h2>
         </div>
-        <div class="portfolio-img-wrapper">
-            <a href="https://eduardo-fuentes-jr.github.io/Practice/">
-                <img src="images/Screen Shot 2020-10-19 at 2.51.15 PM.png" alt="">
-            </a>
-        </div>
-
-        <div class="portfolio-img-wrapper">
-            <a href="https://eduardo-fuentes-jr.github.io/engaged/">
-                <img src="images/Screen Shot 2020-10-19 at 2.42.01 PM.png" alt="">
-            </a>
+            <div class="portfolio-img-wrapper">
+                <a href="https://eduardo-fuentes-jr.github.io/Practice/" target="_blank">
+                    <img src="images/Screen Shot 2020-10-19 at 2.51.15 PM.png" alt="Car Website">
+                </a>
             </div>
-        <div class="portfolio-img-wrapper">
-            <a href="https://eduardo-fuentes-jr.github.io/Front-End-Developer/">
-                <img src="images/Screen Shot 2020-10-19 at 2.46.50 PM.png" alt="">
-            </a>
+            <div class="portfolio-img-wrapper">
+                <a href="https://eduardo-fuentes-jr.github.io/engaged/" target="_blank">
+                    <img src="images/Screen Shot 2020-10-19 at 2.42.01 PM.png" alt="Wedding Website">
+                </a>
+                </div>
+            <div class="portfolio-img-wrapper">
+                <a href="https://eduardo-fuentes-jr.github.io/Front-End-Developer/" target="_blank">
+                    <img src="images/Screen Shot 2020-10-19 at 2.46.50 PM.png" alt="Personal Website">
+                </a>
             </div>
     </section>
 
-
     <!-- END PORTFOLIO DESCRIPTION SECTION --------------------->
-
+    <!-- CONTACT SECTION --------------------->
+    <section id="contactSection" class="contact-section">
+        <h2 class="contact-header">contact</h2>
+        <div class="contact-container">
+            <div class="form-container">
+                <form id="form1">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Message:</label><br>
+                    <textarea name="message" id="message"></textarea>
+                </form>
+                <button class="form-btn" type="submit" form="form1" value="Submit">Submit</button>
+            </div>
+            <div class="contact-info-container">
+                <p class="contact-paragraph">
+                    From a newly design website, update to your current website or to get more information, please feel free to send me a message and I will be more than happy to get back to you. I  look forward to hearing from you! 
+                </p>
+                <h3 class="contact-social-heading">Feeling Social?</h3>
+                <p class="contact-social-paragraph">Follow me on my social media!</p>
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/eduardofuentesjr/" target="_blank">
+                        <img src="images/Icon awesome-linkedin.svg" alt="linkedin logo">
+                    </a>
+                    <a href="https://www.instagram.com/_eduardofuentes0/" target="_blank">
+                        <img src="images/Icon feather-instagram.svg" alt="instagram logo">
+                    </a>
+                    <a href="https://twitter.com/_EduardoFuentes" target="_blank">
+                        <img src="images/Icon awesome-twitter.svg" alt="twitter logo">
+                    </a>
+                    <a href="https://github.com/Eduardo-Fuentes-Jr" target="_blank">
+                        <img src="images/Icon ionic-logo-github.svg" alt="Github logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT SECTION --------------------->
 
     <script src="script.js"></script>
 </body>
