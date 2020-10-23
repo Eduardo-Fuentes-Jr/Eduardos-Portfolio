@@ -22,8 +22,8 @@ body {
 .menu-icon {
     width: 40px;
     position: fixed;
-    top: 35px;
-    right: 55px;
+    top: 30px;
+    right: 30px;
     z-index: 100;
 }
 .menu-img {
@@ -171,6 +171,9 @@ body {
     }
 }
 @media screen and (max-width: 500px){
+    .menu-icon {
+        width: 30px;
+    }
     .landing-paragraph {top: 30%; font-size: 20px;}
     .landing-name {font-size: 45px;}
     .landing-bg-img {display: none;}
@@ -429,6 +432,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
+
 .portfolio-img-wrapper img {
     width: 100%;
     transform: scale(1.15);
@@ -439,6 +443,26 @@ body {
     transform: scale(1.1);
     opacity: 1;
     cursor: pointer;
+}
+.portfolio-img-wrapper a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.portfolio-img-wrapper a p {
+    position: absolute;
+    z-index: 101;
+    color: rgba(255, 255, 255, 0.406);
+    top: 50%;
+    left: 50%;
+    font-size:50px;
+    letter-spacing: 2px;
+    transform: translate(-50%, -50%);
+    transition: all .5s;
+}
+.portfolio-img-wrapper a:hover p  {
+   color: #fff;
 }
 
 /* CONTACT SECTION */
@@ -579,4 +603,57 @@ body {
     .contact-info-container {
         width: 100%;
     }
+}
+
+/* FOOTER SECTION  */
+.footer-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.footer-icons a {
+    text-decoration: none;
+
+}
+.footer-icons a img {
+    width: 20px;
+    margin: 0 15px 15px 15px;
+    transition: all .5s;
+}
+.footer-icons a img:hover {
+    opacity: .8;
+}
+.footer-links {
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 15px;
+}
+.footer-links li a {
+    color: rgba(255, 255, 255, 0.406);
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: color .5s;
+}
+.footer-links li a:hover {
+    color: #fff;
+}
+.footer-section p {
+    color: rgba(255, 255, 255, 0.406);
+    font-size: 12px;    
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 500px) {
+    .footer-links{ 
+    width: 100%;
+}
 }
