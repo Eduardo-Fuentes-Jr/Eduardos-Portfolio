@@ -104,10 +104,11 @@ body {
     position: absolute;
     top: 20%;
     left: 20%;
+    animation: enter 1s;
 }
 .landing-name {
-    font-size: 80px;
-    color: #fff;
+    font-weight: 600;
+    font-size: 70px;
 }
 .cta-wrapper {
     position: absolute;
@@ -169,6 +170,10 @@ body {
     100% {
         transform: rotateY(360deg);
     }
+}
+@keyframes enter {
+    0% {transform: translateX(-1000px);}
+    100% {transform: translateX(0);}
 }
 @media screen and (max-width: 500px){
     .menu-icon {
